@@ -1,7 +1,7 @@
 import userEvent from '@testing-library/user-event';
 import { screen } from '@testing-library/react';
 import App from '../App';
-import renderWithRouter from '../renderWithRouter';
+import renderWithRouter from '../helper/RenderWithRouter';
 
 describe('Será avaliado se o arquivo teste Pokedex.test.js contempla 100% dos casos de uso criados pelo Stryker', () => {
   beforeEach(() => renderWithRouter(<App />));
